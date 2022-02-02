@@ -1,0 +1,8 @@
+<button (click)="getHttpData()"> Get HTTP Data </button>
+<p></p>
+
+<p>Messages</p>
+<div *ngFor="let message of messages"> {{ message | json }} </div>
+
+<p></p>
+<button (click)="clear()"> Clear </button>
